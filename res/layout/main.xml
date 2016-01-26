@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="9" >
+
+    <!-- Address Bar and Searchn Bar -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="4"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+            <EditText
+                android:id="@+id/etAddr"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginRight="-4.5dp"
+                android:layout_weight="2"
+                android:hint="Address"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:singleLine="true" />
+
+            <ImageButton
+                android:id="@+id/bAddr"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginRight="-4.5dp"
+                android:layout_weight="8"
+                android:contentDescription="Address"
+                android:src="@drawable/search"
+                android:text="GO" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+            <EditText
+                android:id="@+id/etKeyword"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginRight="-4.5dp"
+                android:layout_weight="3"
+                android:hint="Search"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:singleLine="true" />
+
+            <ImageButton
+                android:id="@+id/bKeyword"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginRight="-4.5dp"
+                android:layout_weight="7"
+                android:contentDescription="Search Keyword"
+                android:src="@drawable/search"
+                android:text="GO" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- The Body -->
+
+    <WebView
+        android:id="@+id/wvContent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-4.5dp"
+        android:layout_marginTop="-5dp"
+        android:layout_weight="1" />
+
+    <!-- The bottom options -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        android:weightSum="20" >
+
+        <Button
+            android:id="@+id/Back"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="-4.5dp"
+            android:layout_weight="5"
+            android:text="@string/back" />
+
+        <Button
+            android:id="@+id/Forward"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="-4.5dp"
+            android:layout_weight="5"
+            android:text="@string/forward" />
+
+        <Button
+            android:id="@+id/Refresh"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="-4.5dp"
+            android:layout_weight="5"
+            android:text="Refresh" />
+
+        <Button
+            android:id="@+id/Options"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="-4.5dp"
+            android:layout_weight="5"
+            android:text="Options" />
+    </LinearLayout>
+
+</LinearLayout>

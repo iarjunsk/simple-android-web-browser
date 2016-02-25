@@ -2,4 +2,4 @@
 
 This a basic Android WebBrowser build with webview.
 
-You find a useful tutorial here : http://www.arjunsk.com/android/build-your-simple-web-browser-in-eclipse/
+You can read my tutorial here : http://www.arjunsk.com/android/build-your-simple-web-browser-in-eclipse/

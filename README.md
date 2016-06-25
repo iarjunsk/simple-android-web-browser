@@ -1,6 +1,6 @@
 # simple-android-browser
 
-![Image](http://i2.wp.com/www.arjunsk.com/wp-content/uploads/2016/01/1-1.png)
+![Image](https://raw.githubusercontent.com/arjunsk/simple-android-web-browser/master/screenshot.png)
 
 This a basic Android WebBrowser build with webview.
 
